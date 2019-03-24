@@ -11,4 +11,3 @@ class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE) # sets a relationship with a Question
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
-
