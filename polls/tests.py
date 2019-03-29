@@ -5,6 +5,13 @@ from django.urls import reverse
 
 from .models import Question
 
+#Las reglas básicas de uso para las pruebas incluyen el hecho de tener:
+#
+#    una TestClass independiente para cada modelo o vista
+#    un método de prueba independiente para cada conjunto de condiciones que usted quiere probar
+#    nombres de los métodos de prueba que describan su función
+
+
 # Create your tests here.
 def create_question(question_text, days):
     """Create a question with the given `question_text` and published the
